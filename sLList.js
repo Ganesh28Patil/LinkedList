@@ -39,8 +39,26 @@ class LinkedList{
                 current = current.next;
             }
         }
+        // insert(elem,index)
+        // delete(elem)
+        // isEmpty
+        // size
+        isEmpty(){
+            
+            // return this.size()===0:true?false
+            if(this.size === 0){
+                return true
+            }else{
+                return false
+            }
+        }
+        sizeOfLL(){
+            return this.size;
+        }
+
     }
     let list = new LinkedList();
+    console.log("is that List empty",list.isEmpty());
     console.log('list:', list)
     list.add(2);
     console.log('list:', list)
@@ -50,5 +68,7 @@ class LinkedList{
     console.log('list:', list)
 
     list.printList();
+   console.log("is that List empty",list.isEmpty());
+
 
 // console.log(!null); // true
