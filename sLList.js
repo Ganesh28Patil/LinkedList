@@ -30,7 +30,15 @@ class LinkedList{
         }
         this.size++;            
         }
-
+        // print
+        printList(){
+            var current = this.head;
+            var index = 0;
+            while(current){
+                console.log("Element : ",current.element,"Index : ",index++);
+                current = current.next;
+            }
+        }
     }
     let list = new LinkedList();
     console.log('list:', list)
@@ -40,5 +48,7 @@ class LinkedList{
 
 
     console.log('list:', list)
+
+    list.printList();
 
 // console.log(!null); // true
